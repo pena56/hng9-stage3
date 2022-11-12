@@ -1,0 +1,172 @@
+.burgermenu {
+  border: none;
+  background: none;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgermenu:hover {
+  opacity: 1;
+}
+
+.line1 {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  height: 1px;
+  border-top: 2px solid #a02279;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.line2 {
+  width: 70%;
+  position: absolute;
+  right: 0;
+  height: 1px;
+  border-top: 2px solid #a02279;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.line3 {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  height: 1px;
+  border-top: 2px solid #a02279;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.opened > .line1 {
+  animation-name: line1;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-fill-mode: forwards;
+}
+
+.opened > .line2 {
+  animation-name: line2;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-fill-mode: forwards;
+}
+
+.opened > .line3 {
+  animation-name: line3;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes line1 {
+  0% {
+    top: 15px;
+  }
+  50% {
+    top: 22px;
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: unset;
+  }
+}
+
+@keyframes line2 {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes line3 {
+  0% {
+    bottom: 10px;
+    width: 30%;
+  }
+  50% {
+    bottom: 22px;
+    width: 70%;
+  }
+  100% {
+    transform: rotate(45deg);
+    bottom: unset;
+    width: 100%;
+  }
+}
+
+@keyframes bottomLineCross {
+  0% {
+    transform: translateY(0px);
+    bottom: 10px;
+  }
+  50% {
+    transform: translateY(0px);
+    bottom: 0;
+  }
+  100% {
+    transform: translateY(0px) rotate(45deg);
+    bottom: -5px;
+    left: 5px;
+  }
+}
+
+@keyframes topLineBurger {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateY(100px) rotate(0deg);
+  }
+}
+
+@keyframes bottomLineBurger {
+  0% {
+    transform: translateY(0px) rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateY(22px) rotate(0deg);
+  }
+}
+
+@media screen and (min-width: 670px) {
+}
+
+@media screen and (min-width: 1240px) {
+  .burgermenu {
+    display: none;
+  }
+}

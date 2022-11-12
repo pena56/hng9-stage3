@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import NFTs from "./pages/NFTs";
+import Places from "./pages/Places";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/nfts" element={<NFTs />} />
+      <Route path="/places" element={<Places />} />
     </Routes>
   );
 }
