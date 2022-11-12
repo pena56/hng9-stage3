@@ -1,9 +1,9 @@
-import Button from "../../components/Button";
+import PageLayout from "../../layout/PageLayout";
 
 export default function Home() {
   return (
-    <div style={{ padding: "20px" }}>
-      <Button />
-    </div>
+    <PageLayout>
+      <h1>Home Page</h1>
+    </PageLayout>
   );
 }

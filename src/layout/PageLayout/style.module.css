@@ -1,0 +1,24 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+}
+
+.content_wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background: cornflowerblue;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    background: olivedrab;
+  }
+}
