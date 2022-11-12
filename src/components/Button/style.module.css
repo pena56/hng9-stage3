@@ -1,0 +1,52 @@
+.mt_btn {
+  padding: 14px 33px;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.mt_btn_light {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  color: #a02279;
+  padding: 14px 33px;
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.mt_btn:hover {
+  color: #a02279;
+  border: 1px solid #a02279;
+  background: #ffffff;
+}
+
+.mt_btn_light:hover {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  color: #ffffff;
+}
+
+.mt_btn_light:focus {
+  border: 1px solid #a02279;
+}
+
+.mt_btn:focus {
+  border: 1px solid #000000;
+}
