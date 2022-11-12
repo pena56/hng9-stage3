@@ -18,7 +18,7 @@ export default function SidebarMenu() {
         </ul>
       </div>
 
-      <Button />
+      <Button label="Connect wallet" />
     </aside>
   );
 }

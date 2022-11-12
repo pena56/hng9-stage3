@@ -48,6 +48,9 @@
 }
 
 @media screen and (min-width: 670px) {
+  .container {
+    width: 280px;
+  }
 }
 
 @media screen and (min-width: 1240px) {
