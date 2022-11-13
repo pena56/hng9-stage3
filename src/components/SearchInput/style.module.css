@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.container > input {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  padding: 0 15px;
+  border: 1px solid #a3a3a3;
+  border-right-color: transparent;
+  border-radius: 8px 0px 0px 8px;
+  max-width: 70%;
+  height: 54px;
+  outline: none;
+}
+
+.container > input::placeholder {
+  color: #b8b8b8;
+}
+
+.container > input:focus {
+  border-color: #a02279;
+}
+
+.container > button {
+  font-family: "Red Rose";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  height: 54px;
+  width: 100%;
+  max-width: 230px;
+  padding: 17px 0;
+  border-color: transparent;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
+  border-radius: 0px 8px 8px 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 670px) {
+  .container > input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .container {
+    width: 90%;
+  }
+}

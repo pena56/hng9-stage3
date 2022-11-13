@@ -12,13 +12,13 @@
 }
 
 @media screen and (min-width: 670px) {
-  /* .container {
-    background: cornflowerblue;
-  } */
+  .content_wrapper {
+    padding: 0 24px;
+  }
 }
 
 @media screen and (min-width: 1240px) {
-  /* .container {
-    background: olivedrab;
-  } */
+  .content_wrapper {
+    padding: 0 32px;
+  }
 }

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isNavSticky, setIsNavSticky] = useState(false);
 
   const stickNavbar = () =>
-    window.scrollY >= 80 ? setIsNavSticky(true) : setIsNavSticky(false);
+    window.scrollY >= 120 ? setIsNavSticky(true) : setIsNavSticky(false);
 
   window.addEventListener("scroll", stickNavbar);
 
