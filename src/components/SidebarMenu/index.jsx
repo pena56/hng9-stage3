@@ -4,7 +4,7 @@ import style from "./style.module.css";
 import logo from "../../assets/logo.svg";
 
 export default function SidebarMenu() {
-  const { isSidebarOpen } = useLayout();
+  const { isSidebarOpen, toggleModal } = useLayout();
 
   return (
     <aside className={`${style.container} ${isSidebarOpen && style.opened}`}>
@@ -18,7 +18,7 @@ export default function SidebarMenu() {
         </ul>
       </div>
 
-      <Button label="Connect wallet" />
+      <Button label="Connect wallet" onClick={toggleModal} />
     </aside>
   );
 }

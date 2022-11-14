@@ -5,9 +5,11 @@ import style from "./style.module.css";
 import logo from "../../assets/logo.svg";
 import NavbarManuButton from "../../components/NavbarMenuButton";
 import Button from "../../components/Button";
+import { useLayout } from "../../context/LayoutProvider";
 
 export default function Navbar() {
   const [isNavSticky, setIsNavSticky] = useState(false);
+  const { toggleModal } = useLayout();
 
   const stickNavbar = () =>
     window.scrollY >= 120 ? setIsNavSticky(true) : setIsNavSticky(false);
@@ -38,7 +40,7 @@ export default function Navbar() {
           </Link>
         </ul>
 
-        <Button label="Connect wallet" />
+        <Button onClick={toggleModal} label="Connect wallet" />
 
         <NavbarManuButton />
       </div>

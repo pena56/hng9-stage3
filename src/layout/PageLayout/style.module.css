@@ -1,7 +1,7 @@
 .container {
   width: 100%;
-  /* min-height: 100vh; */
   background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  position: relative;
 }
 
 .content_wrapper {
