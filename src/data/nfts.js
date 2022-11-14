@@ -6,6 +6,14 @@ import nft5 from "../assets/nfts/1.png";
 import nft6 from "../assets/nfts/2.png";
 import nft7 from "../assets/nfts/3.png";
 import nft8 from "../assets/nfts/4.png";
+import nft9 from "../assets/nfts/9.png";
+import nft10 from "../assets/nfts/10.png";
+import nft11 from "../assets/nfts/11.png";
+import nft12 from "../assets/nfts/12.png";
+import nft13 from "../assets/nfts/13.png";
+import nft14 from "../assets/nfts/14.png";
+import nft15 from "../assets/nfts/15.png";
+import nft16 from "../assets/nfts/16.png";
 
 export const homeNFTs = [
   {
@@ -74,6 +82,153 @@ export const homeNFTs = [
   {
     id: 7,
     cover: nft8,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+];
+
+export const placesNFTs = [
+  {
+    id: 0,
+    cover: nft5,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 1,
+    cover: nft6,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 2,
+    cover: nft7,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 3,
+    cover: nft8,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 4,
+    cover: nft1,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 5,
+    cover: nft2,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 6,
+    cover: nft3,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 7,
+    cover: nft4,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 8,
+    cover: nft9,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 9,
+    cover: nft10,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 10,
+    cover: nft11,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 11,
+    cover: nft12,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 12,
+    cover: nft13,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 13,
+    cover: nft14,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 14,
+    cover: nft15,
+    name: "Desert king",
+    price: "1MBT per night",
+    distance: "2345km away",
+    availability: "available for 2weeks stay",
+    stars: 5,
+  },
+  {
+    id: 15,
+    cover: nft16,
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",

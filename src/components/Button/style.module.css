@@ -41,10 +41,11 @@
 .mt_btn_light:hover {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .mt_btn_light:focus {
-  border: 1px solid #a02279;
+  border: 1px solid #ffffff;
 }
 
 .mt_btn:focus {
