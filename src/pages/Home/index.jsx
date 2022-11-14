@@ -1,9 +1,11 @@
 import PageLayout from "../../layout/PageLayout";
 import SearchInput from "../../components/SearchInput";
 import NFTCard from "../../components/NFTCard";
+import Button from "../../components/Button";
 import style from "./style.module.css";
 
 import bannerImg from "../../assets/banner.png";
+import heroImg from "../../assets/hero.png";
 import mbToken from "../../assets/mbToken.svg";
 import metamask from "../../assets/metamask.svg";
 import openSea from "../../assets/openSea.svg";
@@ -54,6 +56,20 @@ export default function Home() {
             />
           ))}
         </div>
+      </section>
+
+      {/* hero */}
+      <section className={style.heroContainer}>
+        <div className={style.hero_details}>
+          <h3>Metabnb NFTs</h3>
+          <p>
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our customer
+            access to loads of our exculsive services.
+          </p>
+          <Button light label="Learn more" />
+        </div>
+        <img src={heroImg} alt="" />
       </section>
     </PageLayout>
   );
