@@ -52,23 +52,32 @@
   display: none;
 }
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 920px) {
   .nav_contents {
-    padding: 0 24px;
+    padding: 0 32px;
   }
 
   .nav_logo {
     width: 12rem;
   }
+
+  .nav_links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav_contents > button {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 1240px) {
   .nav_container {
-    padding: 18px 0;
+    padding: 24px 0;
   }
 
   .nav_contents {
-    padding: 0 32px;
+    padding: 0 42px;
   }
 
   .nav_logo {
@@ -76,11 +85,6 @@
   }
 
   .nav_links {
-    display: flex;
     gap: 48px;
-  }
-
-  .nav_contents > button {
-    display: inline-block;
   }
 }

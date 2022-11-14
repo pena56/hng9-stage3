@@ -1,0 +1,148 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 0;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 12px 16px;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.filterContainer > img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tagsContainer {
+  width: 100%;
+  max-width: 930px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tagsWrapper {
+  width: 100%;
+  position: absolute;
+  height: 30%;
+}
+
+.tagsWrapper::before,
+.tagsWrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 36px;
+  height: 24px;
+  /* background: rgb(255, 255, 255); */
+  z-index: 10;
+}
+
+.tagsWrapper::before {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+}
+
+.tagsWrapper::after {
+  left: unset;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.leftIcon {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #434343;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  z-index: 100;
+  border-color: #434343 #434343 transparent transparent;
+  transform: rotate(225deg);
+  cursor: pointer;
+}
+
+.rightIcon {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #434343;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 100;
+  border-color: #434343 #434343 transparent transparent;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #434343;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+  padding: 0 24px;
+  scroll-behavior: smooth;
+}
+
+.tags::-webkit-scrollbar {
+  display: none;
+}
+
+.tags > li {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 670px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tagsContainer {
+    order: 1;
+  }
+
+  .filterContainer {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    gap: 48px;
+  }
+
+  .tags {
+    gap: 38px;
+  }
+}
